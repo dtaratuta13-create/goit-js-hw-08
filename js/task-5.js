@@ -1,15 +1,25 @@
-const button = document.querySelector(".change-color");
-const color = document.querySelector(".color");
+<!doctype html>
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-button.addEventListener("click", () => {
-  const randomColor = getRandomHexColor();
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  document.body.style.backgroundColor = randomColor;
-  color.textContent = randomColor;
-});
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.0/dist/basicLightbox.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Gallery</title>
+  </head>
+
+  <body>
+    <ul class="gallery"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.0/dist/basicLightbox.min.js"></script>
+    <script src="./js/task-5.js"></script>
+  </body>
+</html>
