@@ -1,11 +1,10 @@
-const categories = document.querySelectorAll("#categories .item");
+const images = [
+  {
+    preview:
+      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
+    original:
+      'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg',
+    description: 'Hokkaido Flower',
+  },
 
-console.log(`Number of categories: ${categories.length}`);
-
-categories.forEach(category => {
-  const title = category.querySelector("h2").textContent;
-  const items = category.querySelectorAll("ul li").length;
-
-  console.log(`Category: ${title}`);
-  console.log(`Elements: ${items}`);
-});
+];
